@@ -5,7 +5,6 @@ function performSearch() {
     return;
   }
   alert("You searched for: " + query);
-  // You could add real search logic here later
 }
 
 function toggleTheme() {

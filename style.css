@@ -1,91 +1,88 @@
+:root {
+  --bg-color: #0a0a1a;
+  --text-color: #ffffff;
+  --accent-color: #7b2ff7;
+  --header-bg: linear-gradient(to right, #00bfff, #7b2ff7);
+}
+
+body.light-mode {
+  --bg-color: #f4f4f4;
+  --text-color: #000000;
+  --accent-color: #0066ff;
+  --header-bg: linear-gradient(to right, #ffffff, #e0e0ff);
+}
+
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background-color: #0d0d2b;
-  color: #f0f0f0;
-  transition: background-color 0.3s, color 0.3s;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 header {
+  background: var(--header-bg);
+  padding: 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 15px 30px;
-  background: linear-gradient(to right, #7734eb, #5800ff);
-  color: white;
-  flex-wrap: wrap;
+  transition: background 0.3s ease;
 }
 
 .logo {
   height: 50px;
 }
 
-nav a {
-  color: white;
-  text-decoration: none;
-  margin: 0 15px;
+#searchBar {
+  padding: 10px;
+  width: 200px;
+  border-radius: 5px;
+  border: none;
+  font-size: 16px;
+}
+
+#toggleTheme {
+  margin-left: 10px;
+  padding: 10px 15px;
+  background-color: var(--accent-color);
+  border: none;
+  border-radius: 5px;
+  color: #fff;
   font-weight: bold;
-}
-
-nav a:hover {
-  text-decoration: underline;
-}
-
-.search-container {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.search-container input {
-  padding: 6px;
-  border-radius: 4px;
-  border: none;
-  outline: none;
-}
-
-.search-container button,
-.toggle-btn {
-  padding: 6px 10px;
-  background: #5800ff;
-  color: white;
-  border: none;
-  border-radius: 4px;
   cursor: pointer;
-  font-weight: bold;
+  transition: background-color 0.3s ease;
 }
 
-.content {
-  text-align: center;
-  padding: 40px 20px;
+main {
+  padding: 20px;
 }
 
-.grid {
+h1 {
+  margin-bottom: 20px;
+}
+
+.movie-grid {
   display: flex;
-  justify-content: center;
-  gap: 20px;
   flex-wrap: wrap;
-  margin-top: 30px;
+  gap: 20px;
 }
 
 .movie {
   width: 200px;
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 10px;
+  border-radius: 10px;
   text-align: center;
+  transition: background-color 0.3s ease;
 }
 
 .movie img {
-  width: 100%;
-  border-radius: 8px;
+  max-width: 100%;
+  border-radius: 5px;
 }
 
-footer {
-  text-align: center;
-  padding: 20px;
-  background: linear-gradient(to right, #5800ff, #00c4ff);
-  color: white;
-}
-
-.dark-mode {
-  background-color: #121212;
-  color: white;
+.movie-title {
+  margin-top: 10px;
+  font-weight: bold;
+  color: var(--text-color);
 }

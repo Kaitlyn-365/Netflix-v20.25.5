@@ -1,47 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>CinemaFlix</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
   <header>
-    <img src="output-1.png" alt="CinemaFlix Logo" class="logo">
-    <nav>
-      <a href="#">Home</a>
-      <a href="#">Movies</a>
-      <a href="#">Series</a>
-      <a href="#">My List</a>
-    </nav>
-    <div class="search-container">
-      <input type="text" id="searchInput" placeholder="Search movies, shows...">
-      <button onclick="performSearch()">Search</button>
-      <button onclick="toggleTheme()" class="toggle-btn">Toggle Theme</button>
-    </div>
+    <img src="logo.png" alt="CinemaFlix Logo" class="logo" />
+    <input type="text" id="searchBar" placeholder="Search movies...">
   </header>
 
-  <main class="content">
+  <main>
     <h1>Featured Titles</h1>
-    <div class="grid" id="movieGrid">
-      <div class="movie" data-title="Galactic Journey">
-        <img src="https://via.placeholder.com/200x300?text=Galactic+Journey" alt="Galactic Journey">
-        <p>Galactic Journey</p>
-      </div>
-      <div class="movie" data-title="The Last Dragon">
-        <img src="https://via.placeholder.com/200x300?text=The+Last+Dragon" alt="The Last Dragon">
-        <p>The Last Dragon</p>
-      </div>
-      <div class="movie" data-title="Mystery Island">
-        <img src="https://via.placeholder.com/200x300?text=Mystery+Island" alt="Mystery Island">
-        <p>Mystery Island</p>
-      </div>
+    <div class="movie-grid">
+      <!-- Movie posters will be added here later -->
     </div>
   </main>
-
-  <footer>
-    <p>&copy; 2025 CinemaFlix. All rights reserved.</p>
-  </footer>
 
   <script src="script.js"></script>
 </body>

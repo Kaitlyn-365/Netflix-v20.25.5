@@ -11,7 +11,7 @@ header {
   align-items: center;
   justify-content: space-between;
   padding: 15px 30px;
-  background: linear-gradient(to right, #7734eb, #5800ff);
+  background: linear-gradient(to right, #7734eb, #7734eb);
   color: white;
   flex-wrap: wrap;
 }
@@ -81,7 +81,7 @@ nav a:hover {
 footer {
   text-align: center;
   padding: 20px;
-  background: linear-gradient(to right, #5800ff, #00c4ff);
+  background: linear-gradient(to right, #7734eb, #7734eb);
   color: white;
 }
 

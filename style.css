@@ -13,6 +13,7 @@ header {
   padding: 15px 30px;
   background-color: #1b1b3a;
   color: white;
+  flex-wrap: wrap;
 }
 
 .logo {
@@ -28,16 +29,18 @@ nav a {
 
 .search-container {
   display: flex;
+  align-items: center;
   gap: 10px;
 }
 
 .search-container input {
-  padding: 5px;
+  padding: 6px;
+  border-radius: 4px;
+  border: none;
 }
 
 .toggle-btn {
-  margin-left: 20px;
-  padding: 5px 10px;
+  padding: 6px 10px;
   background: #5800FF;
   color: white;
   border: none;
@@ -45,11 +48,9 @@ nav a {
   cursor: pointer;
 }
 
-.hero {
+.content {
   text-align: center;
-  padding: 60px 20px;
-  background: linear-gradient(to right, #00C4FF, #5800FF);
-  color: white;
+  padding: 50px 20px;
 }
 
 footer {

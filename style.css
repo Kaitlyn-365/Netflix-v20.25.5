@@ -1,8 +1,8 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background-color: #ffffff;
-  color: #222;
+  background-color: #0d0d2b; /* deep blue background */
+  color: #f0f0f0;
   transition: background-color 0.3s, color 0.3s;
 }
 
@@ -11,7 +11,7 @@ header {
   align-items: center;
   justify-content: space-between;
   padding: 15px 30px;
-  background-color: #1b1b3a;
+  background: linear-gradient(to right, #00c4ff, #5800ff); /* logo gradient */
   color: white;
   flex-wrap: wrap;
 }
@@ -27,6 +27,10 @@ nav a {
   font-weight: bold;
 }
 
+nav a:hover {
+  text-decoration: underline;
+}
+
 .search-container {
   display: flex;
   align-items: center;
@@ -37,26 +41,39 @@ nav a {
   padding: 6px;
   border-radius: 4px;
   border: none;
+  outline: none;
 }
 
+.search-container button,
 .toggle-btn {
   padding: 6px 10px;
-  background: #5800FF;
+  background: #5800ff;
   color: white;
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  font-weight: bold;
 }
 
 .content {
   text-align: center;
-  padding: 50px 20px;
+  padding: 60px 20px;
+}
+
+.content h1 {
+  font-size: 2.5em;
+  color: #00c4ff;
+}
+
+.content p {
+  font-size: 1.2em;
+  color: #c0c0c0;
 }
 
 footer {
   text-align: center;
   padding: 20px;
-  background-color: #1b1b3a;
+  background: linear-gradient(to right, #5800ff, #00c4ff);
   color: white;
 }
 

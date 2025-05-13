@@ -1,10 +1,11 @@
 function performSearch() {
-  const query = document.getElementById('searchInput').value;
-  if (query.trim() === "") {
-    alert("Please enter a search term.");
-    return;
-  }
-  alert("You searched for: " + query);
+  const query = document.getElementById('searchInput').value.toLowerCase();
+  const movies = document.querySelectorAll('.movie');
+
+  movies.forEach(movie => {
+    const title = movie.getAttribute('data-title').toLowerCase();
+    movie.style.display = title.includes(query) ? 'block' : 'none';
+  });
 }
 
 function toggleTheme() {

@@ -11,7 +11,7 @@ header {
   align-items: center;
   justify-content: space-between;
   padding: 15px 30px;
-  background: linear-gradient(to right, #00c4ff, #5800ff);
+  background: linear-gradient(to right, #7734eb, #5800ff);
   color: white;
   flex-wrap: wrap;
 }

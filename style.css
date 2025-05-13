@@ -1,7 +1,7 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background-color: #0d0d2b; /* deep blue background */
+  background-color: #0d0d2b;
   color: #f0f0f0;
   transition: background-color 0.3s, color 0.3s;
 }
@@ -11,7 +11,7 @@ header {
   align-items: center;
   justify-content: space-between;
   padding: 15px 30px;
-  background: linear-gradient(to right, #00c4ff, #5800ff); /* logo gradient */
+  background: linear-gradient(to right, #00c4ff, #5800ff);
   color: white;
   flex-wrap: wrap;
 }
@@ -57,17 +57,25 @@ nav a:hover {
 
 .content {
   text-align: center;
-  padding: 60px 20px;
+  padding: 40px 20px;
 }
 
-.content h1 {
-  font-size: 2.5em;
-  color: #00c4ff;
+.grid {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 30px;
 }
 
-.content p {
-  font-size: 1.2em;
-  color: #c0c0c0;
+.movie {
+  width: 200px;
+  text-align: center;
+}
+
+.movie img {
+  width: 100%;
+  border-radius: 8px;
 }
 
 footer {

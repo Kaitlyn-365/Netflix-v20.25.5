@@ -6,10 +6,10 @@
 }
 
 body.light-mode {
-  --bg-color: #f4f4f4;
-  --text-color: #000000;
-  --accent-color: #0066ff;
-  --header-bg: linear-gradient(to right, #ffffff, #e0e0ff);
+  --bg-color: #ffffff; /* pure white */
+  --text-color: #000000; /* black text */
+  --accent-color: #0066ff; /* bright blue */
+  --header-bg: linear-gradient(to right, #f9f9f9, #f0f0f0); /* soft gray gradient */
 }
 
 body {
@@ -37,7 +37,7 @@ header {
   padding: 10px;
   width: 200px;
   border-radius: 5px;
-  border: none;
+  border: 1px solid #ccc;
   font-size: 16px;
 }
 
@@ -69,7 +69,7 @@ h1 {
 
 .movie {
   width: 200px;
-  background-color: rgba(255, 255, 255, 0.05);
+  background-color: rgba(0, 0, 0, 0.05);
   padding: 10px;
   border-radius: 10px;
   text-align: center;
